@@ -7,7 +7,7 @@ module.exports = {
           has: [
             {
               type: 'host',
-              value: 'vercel.aarich.dev'
+              value: 'link.vercel.aarich.dev'
             }
           ],
           destination: 'https://e.customeriomail.com/:path*'
