@@ -21,19 +21,11 @@ module.exports = {
     ]
   },
   async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'vercel.aarich.dev'
-            }
-          ],
-          destination: 'https://e.customeriomail.com/:path*'
-        }
-      ]
-    }
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://e.customeriomail.com/:path*'
+      }
+    ]
   }
 }
