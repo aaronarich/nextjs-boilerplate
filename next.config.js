@@ -10,7 +10,7 @@ module.exports = {
               value: 'vercel.aarich.dev'
             }
           ],
-          destination: 'https://e.customeriomail.com/:path*'
+          destination: 'https://track.customer.io/:path*'
         }
       ]
     }
