@@ -15,6 +15,10 @@ module.exports = {
           {
             key: ':scheme:',
             value: 'https'
+          },
+          {
+            key: 'origin',
+            value: 'origin-when-cross-origin'
           }
         ],
       },
