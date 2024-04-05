@@ -24,20 +24,29 @@ module.exports = {
       },
     ]
   },
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'vercel.aarich.dev'
-            }
-          ],
-          destination: 'https://e.customeriomail.com/:path*'
-        }
-      ]
-    }
-  }
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://e.customeriomail.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
+  // async rewrites() {
+  //   return {
+  //     beforeFiles: [
+  //       {
+  //         source: '/:path*',
+  //         has: [
+  //           {
+  //             type: 'host',
+  //             value: 'vercel.aarich.dev'
+  //           }
+  //         ],
+  //         destination: 'https://e.customeriomail.com/:path*'
+  //       }
+  //     ]
+  //   }
+  // }
 }
