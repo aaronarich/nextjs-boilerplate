@@ -5,10 +5,6 @@ module.exports = {
         source: '/:path',
         headers: [
           {
-            key: ':authority:',
-            value: 'e.customeriomail.com',
-          },
-          {
             key: ':method:',
             value: 'GET',
           },
