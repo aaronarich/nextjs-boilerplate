@@ -23,8 +23,8 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/:path*',
-        destination: 'https://e.customeriomail.com/:path*'
+        source: '/path:*',
+        destination: 'https://track.customer.io/:path*'
       }
     ]
   }
